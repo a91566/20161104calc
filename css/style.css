@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html{
+  font-size:16px;
+}
+#top{
+  height: 6rem;
+  background: #4FBA6F;
+}
+#top h1{
+  color:#666;
+  width:12rem;
+  line-height: 6rem;
+  text-align: center;
+  margin: auto;
+}
+#content{
+  width:90%;
+  margin: 0 auto;
+}
+#input-ul{
+  width: 100%;
+  height:auto;
+  margin: auto;
+}
+#input-ul li{
+  width:16rem;
+  margin: 0;
+  float:left;
+  height:100px;
+}
+#content .input-title,#content .input-textbox{
+  line-height: 38px;
+  width: 15rem;
+  text-align: center;
+  margin:0;
+}
+#content .input-textbox{  
+  border: 1px solid lightgray;
+}
+#content .input-textbox:hover{  
+  border: 1px solid #4FBA6F;
+}
+input[type='number']{
+  font-size: 16px;
+  border:0;
+  outline: 0;
+}
+input[type='number']:hover{
+  /*border-color:#4FBA6F;*/
+  /*outline: 1px solid #4FBA6F;*/
+}
+
+#content .input-textbox input{
+  height: 30px;
+  padding: 4px;
+}
+#result-ul{
+  width: 100%;
+  margin: auto;
+  height: auto;
+  line-height: 40px;
+}
+#result-ul .result-title{
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+}
+#result-ul li{
+  border-bottom: 1px dashed  #4FBA6F;
+}
+.result-item{
+  border-radius: 10px;
+  clear:both;
+  text-align: center;
+  display: inline-block;
+  width: 60px;
+  color:#333;
+}
+.result-item-0{
+  background: lightgray;
+  color: darkgreen;
+  font-weight: bold;
+}
+#footer{
+  position: absolute;
+  bottom: 0;
+  height:50px;
+  width: 100%;
+}
+#footer div{
+  font:12px arial;
+  height:20px;
+  line-height: 20px;
+  width:100px;
+  text-align: center;
+  margin: 20px auto;
+}
+.calc-btn{
+  clear:both;
+  width:80%;
+  margin:auto;
+  height:60px;
+}
+.btnCalc{
+  border:1px solid #000;
+  border-radius: 10px;
+  box-shadow:0px 0px 8px #000;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  margin: 0 auto;
+  display: block;
+  width: 40%;
+  height:30px;
+  text-align: center;
+  line-height: 30px;
+}
+.btnCalc:hover{
+  border:0;
+  color: #fff;
+  background: #4FBA6F;
+}
+div.input{
+  width:100px;
+}
+.p-relative{
+  position: relative;
+}
+.btnUpDown{
+  cursor: pointer;
+  width: 32px;
+  height:32px;
+  position: absolute;
+  top:4px;
+  transition: 0.2s;
+}
+.btnUpDown:hover{
+   transform:scale(1.2); 
+}
+#btnUpPoint,#btnUpCreateCount{
+  background: url('../img/up.svg') 0 0 no-repeat;
+  right:40px;
+}
+#btnDownPoint,#btnDownCreateCount{
+  background: url('../img/down.svg') 0 0 no-repeat;
+  right:4px;
+}
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}

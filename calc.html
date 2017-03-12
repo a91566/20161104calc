@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<title>计算随机数</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+	<link rel="stylesheet" href="./css/style.css" media="screen" title="no title">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+</head>
+<body>
+	<div id="top">
+		<h1>计算随机数</h1>
+	</div>
+	<div id="content">
+			<ul id='input-ul'>
+				<li>
+				  <div class="input-title">
+						<label for="txtMiddle">中值</label>
+					</div>
+					<div class="input-textbox">
+						<input type="number" name="txtMiddle" id="txtMiddle" value="8"/>
+					</div>
+				</li>
+				<li>
+					<div class="input-title">
+						<label for="txtDeviation">偏差</label>
+					</div>
+					<div class="input-textbox p-relative">
+						<div style="position:absolute;left:2px;top:1px;">±</div>
+						<input type="number" name="txtDeviation" id="txtDeviation" value="2"/>
+					</div>
+				</li>
+				<li>
+					<div class="input-title">
+						<label for="txtPoint">小数位数</label>
+					</div>
+					<div class="input-textbox p-relative">
+						<input type="number" name="txtPoint" id="txtPoint" value="1"/>
+						<a class="btnUpDown" id="btnUpPoint" title="加1"></a>
+						<a class="btnUpDown" id="btnDownPoint" title="减1"></a>
+					</div>
+				</li>
+				<li>
+					<div class="input-title">
+						<label>生成个数</label>
+					</div>
+					<div class="input-textbox p-relative">
+						<input type="number" name="txtCreateCount" id="txtCreateCount" value="10"/>
+						<a class="btnUpDown" id="btnUpCreateCount" title="加1"></a>
+						<a class="btnUpDown" id="btnDownCreateCount" title="减1"></a>
+					<div>
+				</li>
+			</ul>
+			<div class="calc-btn">
+				<!-- <button type="button" name="btnCalc" id="btnCalc">计算</button> -->
+				<a href="javascript:;" class="btnCalc" id="btnCalc">计算</a>
+			</div>
+				<ul id="result-ul">
+					<li>
+							<span class="result-title">生成结果:</span>
+							<span class="result-output" id="result"></span>
+					</li>
+					<li>
+							<span class="result-title">平均值:</span>
+							<span class="result-output" id="result-avg"></span>
+					</li>
+					<li>
+							<span class="result-title">标准差:</span>
+							<span class="result-output" id="result-StandardDeviation"></span>
+					</li>
+					<li>
+							<span class="result-title">变异系数:</span>
+							<span class="result-output" id="result-cv"></span>
+					</li>
+				</ul>
+	</div>
+	<div id="footer">
+		<!-- <div>© 2016 zsb</div> -->
+	</div>
+</body>
+</html>
